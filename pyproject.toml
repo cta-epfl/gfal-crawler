@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "gfal-crawler"
+version = "0.1.0"
+description = ""
+authors = ["Volodymyr Savchenko <Volodymyr.Savchenko@epfl.ch>"]
+readme = "README.md"
+packages = [{include = "gfal_crawler"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+gfal2-python = "^1.11.0.post3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+gfal-crawler = 'gfal_crawler.cli:cli'
